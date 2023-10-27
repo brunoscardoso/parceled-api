@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types",
+    ],
+    "noUnusedLocals": false,
+    "target": "es6",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "baseUrl": "./src",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "types/*": [
+        "@types/*"
+      ],
+      "config/*": [
+        "config/*"
+      ],
+      "routes/*": [
+        "routes/*"
+      ],
+      "schemas/*": [
+        "schemas/*"
+      ],
+      "services/*": [
+        "services/*"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

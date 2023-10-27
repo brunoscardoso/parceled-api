@@ -1,0 +1,38 @@
+{
+  "name": "parceled-api",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register  --transpile-only src/server.ts",
+    "dev": "nodemon",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@fastify/swagger": "^8.12.0",
+    "@fastify/swagger-ui": "^1.10.1",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "fastify-raw-body": "^4.2.2",
+    "tsconfig-paths": "^4.2.0",
+    "winston": "^3.11.0",
+    "winston-format-debug": "^1.4.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  }
+}
